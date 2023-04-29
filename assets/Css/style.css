@@ -103,7 +103,7 @@
     text-decoration: none;
   }
   
-  img { height: auto; }
+  img { height: auto; border-radius: 300px; }
   
   input,
   button {
@@ -408,7 +408,9 @@
     #HERO
   \*-----------------------------------*/
   
-  .hero-banner { display: none; }
+  .hero-banner { 
+    display: none; 
+  }
   
   .hero {
     background-color: var(--midnight-green);
@@ -477,7 +479,11 @@
   \*-----------------------------------*/
   
   .service-list {
-    padding-block: 60px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-block: 60px 30px ;
     padding-inline: 25px;
     display: grid;
     gap: 30px;
