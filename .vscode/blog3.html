@@ -5,45 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- style -->
-  <style>
-    /* Style inputs */
-    input[type=text],
-    select,
-    textarea {
-      /* width: 100%; */
-      padding: 12px;
-      border: 1px solid #ccc;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      /* resize: vertical; */
-    }
 
-    /* Create two columns that float next to eachother */
-    .column {
-      float: left;
-      width: 100%;
-      margin-top: 6px;
-      padding: 20px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-
-      .column,
-      input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-      }
-    }
-  </style>
   <!-- 
     - primary meta tags
   -->
@@ -95,7 +57,7 @@
     - #HEADER
   -->
 
-  <header class="header" data-header>
+  <header class="header" style="background-color: hsl(186, 82%, 13%);" data-header>
     <div class="container">
 
       <a href="index.html" class="logo">
@@ -106,7 +68,7 @@
 
         <div class="navbar-top">
 
-          <a href="index.html" class="logo">
+          <a href="blog.html" class="logo">
             <img src="./assets/images/logo.png" width="136" height="46" alt="Doclab home">
           </a>
 
@@ -131,7 +93,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="index.html" class="navbar-link title-md">About us</a>
+            <a href="about.html" class="navbar-link title-md">About us</a>
           </li>
 
           <li class="navbar-item">
@@ -186,85 +148,78 @@
 
     </div>
   </header>
+
   <!-- 
-        - #HERO
-      -->
+    - #Blog
+  -->
+  <br>
+  <br>
+  <section class="section about" aria-labelledby="about-label">
+    <div class="blog-cont">
+      <div class="about-contt">
 
-  <section class="section hero" style="background-image: url('./assets/images/hero-bg.png')" aria-label="home">
-    <div class="container">
+        <h4 class="headline-md" data-reveal="left">The Power of Conversation: How Talking to Someone Can Help You</h4>
 
-      <div class="hero-content">
-        <h1 class="headline-lg hero-title" data-reveal="left">
-          Contact Us
-        </h1>
+        <p style = "font-size: larger;"class="section-text" data-reveal="left">
+            In today's fast-paced and digitally connected world, it is easy to underestimate the value of a simple conversation. We often find ourselves engrossed in our own thoughts, overwhelmed by daily stresses, and isolated by the virtual barriers of social media. However, the truth is that talking to someone can have a profound impact on our well-being and overall happiness. This article explores the many benefits of engaging in meaningful conversations and highlights how they can positively influence our lives.
 
-        <div class="hero-card" data-reveal="left">
-          <div class="wrapper">
-            <div class="row">
-              <div class="column">
-                <form action="/action_page.php">
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-                  <label for="country">Country</label><br>
-                  <select name="state" id="state" class="form-control">
-                    <option value="Andhra Pradesh">Delhi</option>
-                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                    <option value="Assam">Assam</option>
-                    <option value="Bihar">Bihar</option>
-                    <option value="Chandigarh">Chandigarh</option>
-                    <option value="Chhattisgarh">Chhattisgarh</option>
-                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
-                    <option value="Daman and Diu">Daman and Diu</option>
-                    <option value="Delhi">Andhra Pradesh</option>
-                    <option value="Lakshadweep">Lakshadweep</option>
-                    <option value="Puducherry">Puducherry</option>
-                    <option value="Goa">Goa</option>
-                    <option value="Gujarat">Gujarat</option>
-                    <option value="Haryana">Haryana</option>
-                    <option value="Himachal Pradesh">Himachal Pradesh</option>
-                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-                    <option value="Jharkhand">Jharkhand</option>
-                    <option value="Karnataka">Karnataka</option>
-                    <option value="Kerala">Kerala</option>
-                    <option value="Madhya Pradesh">Madhya Pradesh</option>
-                    <option value="Maharashtra">Maharashtra</option>
-                    <option value="Manipur">Manipur</option>
-                    <option value="Meghalaya">Meghalaya</option>
-                    <option value="Mizoram">Mizoram</option>
-                    <option value="Nagaland">Nagaland</option>
-                    <option value="Odisha">Odisha</option>
-                    <option value="Punjab">Punjab</option>
-                    <option value="Rajasthan">Rajasthan</option>
-                    <option value="Sikkim">Sikkim</option>
-                    <option value="Tamil Nadu">Tamil Nadu</option>
-                    <option value="Telangana">Telangana</option>
-                    <option value="Tripura">Tripura</option>
-                    <option value="Uttar Pradesh">Uttar Pradesh</option>
-                    <option value="Uttarakhand">Uttarakhand</option>
-                    <option value="West Bengal">West Bengal</option>
-                  </select>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="width: 100%"></textarea>
-                  <button class="btn has-before">
-                    <span class="span title-md">Submit</span>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
+
+        </p>
+
+        <p style = "font-size: larger;" class="tab-text" data-reveal="left">
+          <strong>Emotional Support & Connection:</strong> 
+          One of the primary advantages of talking to someone is the emotional support and connection it provides. Whether it's a close friend, family member, or a trained professional, sharing our thoughts and feelings with someone who listens non-judgmentally can alleviate stress and loneliness. When we open up and express our concerns, we often find comfort in knowing that we are not alone in our experiences. Conversations foster empathy, understanding, and a sense of belonging, which can be crucial for maintaining good mental health.
+<br>
+<br>
+<strong>Gaining Different Perspective:</strong>
+Engaging in conversations exposes us to diverse viewpoints and perspectives. When we interact with others, we have the opportunity to broaden our horizons, challenge our existing beliefs, and gain new insights into various subjects. Conversations serve as a platform for learning, growth, and personal development. They encourage critical thinking, expand our knowledge, and enable us to see the world from different angles. By embracing diverse opinions, we foster tolerance, empathy, and a more inclusive mindset.
+<br>
+<br>
+<strong>Problem Solving & Decision Making:</strong> 
+Talking to someone can be a valuable tool for problem solving and decision making. When we face difficult situations or have important choices to make, seeking advice from trusted individuals can offer fresh perspectives and help us make more informed choices. Discussing our concerns with others can provide alternative solutions, highlight potential risks or benefits, and ultimately guide us towards making better decisions. The act of verbalizing our thoughts can also help organize our ideas, leading to greater clarity and improved problem-solving skills.
+<br>
+<br>
+<strong>Stress Reduction & Emotional Well-being:</strong>
+While you can provide emotional support, it's essential to encourage your loved one to seek professional help. Encourage them to consult with a mental health professional, such as a therapist or counselor, who can offer expert guidance and treatment options. Assure them that seeking help is a sign of strength, and remind them that they don't have to face depression alone.
+<br>
+<br>
+<strong>Encourage healthy habits:</strong>
+Help your loved one develop and maintain healthy habits that can positively impact their mental well-being. Encourage them to engage in regular exercise, as physical activity has been shown to boost mood and reduce symptoms of depression. Promote healthy eating habits and ensure they are getting proper nutrition. Encourage them to establish a consistent sleep routine, as sleep plays a vital role in mental health.
+<br>
+<br>
+<strong>Strengthening Relationships:</strong>
+Conversations play a pivotal role in building and strengthening relationships. By engaging in open and honest communication, we foster trust, understanding, and deeper connections with those around us. Meaningful conversations help us navigate conflicts, express appreciation, and reinforce the bonds we share with others. By actively listening and showing genuine interest in what others have to say, we demonstrate our respect and commitment to the relationship, fostering a sense of closeness and mutual support.
+<br>
+<br>
+<br>
+<h6 class="headline-md" data-reveal="left">Conclusion:</h6>
+<br>
+
+        </p>
+
+        <div class="wrapper">
+
+          <ul class="about-list">
+
+            <li style = "font-size: larger;" class="about-item" data-reveal="left">
+
+              <span class="span">In a world filled with distractions and digital interactions, it is important not to underestimate the power of conversation. Engaging in meaningful discussions with others provides emotional support, broadens our perspectives, aids in problem solving, reduces stress, and strengthens our relationships. So, let's make a conscious effort to prioritize authentic conversations, whether with friends, family, or professionals, and experience the positive impact they can have on our lives. Remember, a simple conversation has the potential to change our outlook, improve our well-being, and create a more connected and empathetic world.Remember to prioritize your own well. By giving mental health the attention it deserves, we can truly thrive and enjoy a balanced and meaningful existence. Remember, taking care of your mind is just as important as taking care of your body.Mental health is an integral part of our overall well-being, deserving equal attention as physical health. Prioritizing mental health positively impacts our emotional well-being, cognitive functioning, relationships, and overall quality of life. By recognizing the importance of mental health and adopting practices that promote mental well-being, we can lead fulfilling lives, contribute to society, and achieve a great life.</span>
+            </li>
+          </ul>
 
         </div>
 
       </div>
+      <br>
+      <br>
 
-      <figure class="hero-banner" data-reveal="right">
-        <img src="./assets/images/about.jpg" width="590" height="517" loading="eager" alt="hero banner" class="w-100">
-      </figure>
+      <!-- <figure class="about-banner" data-reveal="right">
+        <img src="./assets/images/experience.jpg" width="554" height="678" loading="lazy" alt="about banner"
+          class="w-100">
+      </figure> -->
 
     </div>
-  </section>
+  </section>  
   <!-- 
     - #FOOTER
   -->
@@ -368,7 +323,7 @@
           </li>
 
           <li>
-            <a href="blog4.html" class="text footer-link">Symptoms of Bad Mental Health</a>
+            <a href="#" class="text footer-link">Symptoms of Bad Mental Health</a>
           </li>
 
           <li>
@@ -376,7 +331,7 @@
           </li>
 
           <li>
-            <a href="privacy_policy.html" class="text footer-link">Privacy policy</a>
+            <a href="#" class="text footer-link">Privacy policy</a>
           </li>
 
           <li>
